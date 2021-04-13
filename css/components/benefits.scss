@@ -1,0 +1,36 @@
+.benefits {
+    display: flex;
+    // text-align: center;
+}
+
+.benefits__item {
+    flex: 1;
+    padding: 0 3%; // margin: 0 3%;
+    position: relative;
+
+    &::before {
+        content: url("../img/oOo.svg");
+        position: absolute;
+        top: 50px;
+        right: 0;
+        transform: translate(50%);
+    }
+
+    &:first-child {
+        padding-left: 0;
+    }
+
+    &:last-child {
+        &:before {
+            content: ""; // or display: none;
+        }
+        padding-right: 0;
+    }
+}
+
+.benefit__title {
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 18px;
+    color: #292929;
+}

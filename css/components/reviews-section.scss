@@ -1,0 +1,12 @@
+.reviews-section {
+    position: relative;
+    background: url("../../img/review-strawberry.svg") right 9% top 13% no-repeat;
+
+    &::before {
+        content: url("../../img/review-leaf-and-berries.svg");
+        position: absolute;
+        bottom: -21%;
+        left: 0;
+    }
+    
+}

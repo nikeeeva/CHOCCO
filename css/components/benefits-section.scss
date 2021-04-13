@@ -1,0 +1,11 @@
+.benefits-section {
+    position: relative;
+    background: url("../img/whyleaf.svg") left top 57% no-repeat;
+
+    &::before {
+        content: url("../img/bars-raspberry.svg");
+        position: absolute;
+        bottom: -9%;
+        left: 0;
+    }
+}

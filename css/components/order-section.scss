@@ -1,5 +1,20 @@
 .order-section {
-    background-color: #b8bdbb;
+    background: url("../../img/order_background.png");
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: url(../../img/order_blueberry.svg);
+        left: 51px;
+        bottom: 69px;
+    }
+
+    &::after {
+        content: url("../../img/order_leaf.svg");
+        position: absolute;
+        right: 10px;
+        bottom: 58px;
+    }
 }
 
 .order-section__title {

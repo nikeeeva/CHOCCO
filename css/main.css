@@ -97,7 +97,7 @@ img {
   justify-content: space-between;
   height: 100%;
   padding: 24px 0 50px;
-  background: url("../img/chocolates.svg") right center/50% auto no-repeat;
+  background: url("../../img/chocolates.png") right center/50% auto no-repeat;
 }
 
 .preview__title {
@@ -197,7 +197,7 @@ img {
   background: #365A49;
   color: #fff;
   margin-top: 63px;
-  margin-right: 4px;
+  margin-right: -23px;
 }
 .order__button--green:hover {
   color: #365A49;
@@ -426,7 +426,20 @@ img {
 }
 
 .order-section {
-  background-color: #b8bdbb;
+  background: url("../../img/order_background.png");
+  position: relative;
+}
+.order-section::before {
+  position: absolute;
+  content: url("../../img/order_blueberry.svg");
+  left: 51px;
+  bottom: 69px;
+}
+.order-section::after {
+  content: url("../../img/order_leaf.svg");
+  position: absolute;
+  right: 10px;
+  bottom: 58px;
 }
 
 .order-section__title {

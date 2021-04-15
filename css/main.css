@@ -319,7 +319,7 @@ img {
 }
 
 .reviews__display {
-  background: url("../../img/review-picture.svg") right top 22px no-repeat;
+  background: url("../img/review-picture.svg") right top 22px no-repeat;
   background-color: #F8FAF9;
   padding: 42px 42px 42px;
   margin-bottom: 15px;
@@ -416,17 +416,17 @@ img {
 
 .reviews-section {
   position: relative;
-  background: url("../../img/review-strawberry.svg") right 9% top 13% no-repeat;
+  background: url("../img/review-strawberry.svg") right 9% top 13% no-repeat;
 }
 .reviews-section::before {
-  content: url("../../img/review-leaf-and-berries.svg");
+  content: url("../img/review-leaf-and-berries.svg");
   position: absolute;
   bottom: -21%;
   left: 0;
 }
 
 .order-section {
-  background: url("../../img/order_background.png");
+  background: url("../img/order_background.png");
   position: relative;
 }
 .order-section::before {

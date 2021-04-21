@@ -1,9 +1,17 @@
+
+
+.advantages {
+    @include tablets {
+        display: none;
+    }
+}
+
 .advantages__list {
     display: flex;
 }
 
 .advantages__item {
-    margin-right: 60px;
+    margin-right: rem(60px);
 
     &:last-child {
         margin-right: 0;

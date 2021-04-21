@@ -11,7 +11,7 @@
     &::before {
         content: url("../img/oOo.svg");
         position: absolute;
-        top: 50px;
+        top: rem(50px);
         right: 0;
         transform: translate(50%);
     }
@@ -29,8 +29,8 @@
 }
 
 .benefit__title {
-    font-size: 27px;
+    font-size: rem(27px);
     font-weight: bold;
-    margin-bottom: 18px;
+    margin-bottom: rem(18px);
     color: #292929;
 }

@@ -5,19 +5,19 @@
     &::before {
         position: absolute;
         content: url("../img/order_blueberry.svg");
-        left: 51px;
-        bottom: 69px;
+        left: rem(51px);
+        bottom: rem(69px);
     }
 
     &::after {
         content: url("../img/order_leaf.svg");
         position: absolute;
-        right: 10px;
-        bottom: 58px;
+        right: rem(10px);
+        bottom: rem(58px);
     }
 }
 
 .order-section__title {
-    margin-bottom: 61px;
+    margin-bottom: rem(61px);
     color: $darkGreen;
 }

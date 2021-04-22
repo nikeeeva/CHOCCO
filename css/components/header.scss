@@ -1,7 +1,8 @@
 .header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
+    
 }
 
 .contacts__phone.header-contacts__phone {
@@ -11,6 +12,8 @@
 }
 
 .menu {
+    margin: 0 30px;
+
     @include tablets {
         display: none;
     }
@@ -19,6 +22,8 @@
 .menu__list {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .menu__item {
@@ -29,6 +34,7 @@
     }
 }
 
+
 .contacts__phone {
     font-size: rem(22px);
     text-decoration: none;
@@ -37,12 +43,24 @@
     
 }
 
+.contacts__phone-text {
+    white-space: nowrap;
+}
+
+
+.contacts__phone-icon {
+    flex-shrink: 0;
+}
+
 .contacts__phone-icon-elem {
     width: rem(14px);
     height: rem(78px);
     margin-right: rem(6px);
+    
+   
 }
 
 .menu__link {
     text-decoration: none;
+    white-space: nowrap;
 }

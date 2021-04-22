@@ -191,9 +191,15 @@ img {
 
 .menu__item {
   margin-right: 1.5rem;
+  margin-top: 7px;
+  margin-bottom: 10px;
 }
 .menu__item:last-child {
   margin-right: 0;
+}
+
+.contacts {
+  margin-top: -20px;
 }
 
 .contacts__phone {

@@ -157,13 +157,13 @@ img {
 }
 @media screen and (max-width: 768px) {
   .preview__info {
-    padding: 0 20%;
+    padding: 0 26%;
   }
 }
 
 .header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -173,6 +173,9 @@ img {
   }
 }
 
+.menu {
+  margin: 0 30px;
+}
 @media screen and (max-width: 768px) {
   .menu {
     display: none;
@@ -182,6 +185,8 @@ img {
 .menu__list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .menu__item {
@@ -198,6 +203,14 @@ img {
   align-items: center;
 }
 
+.contacts__phone-text {
+  white-space: nowrap;
+}
+
+.contacts__phone-icon {
+  flex-shrink: 0;
+}
+
 .contacts__phone-icon-elem {
   width: 0.7777777778rem;
   height: 4.3333333333rem;
@@ -206,6 +219,7 @@ img {
 
 .menu__link {
   text-decoration: none;
+  white-space: nowrap;
 }
 
 @media screen and (max-width: 768px) {
@@ -640,7 +654,7 @@ img {
 }
 
 .hamburger {
-  width: 24px;
+  width: 26px;
   height: 20px;
   flex-direction: column;
   justify-content: space-between;

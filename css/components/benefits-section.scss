@@ -2,10 +2,18 @@
     position: relative;
     background: url("../img/whyleaf.svg") left top 57% no-repeat;
 
+    @include tablets {
+        background-position: left top 15%;
+    }
+
     &::before {
         content: url("../img/bars-raspberry.svg");
         position: absolute;
         bottom: -9%;
         left: 0;
+
+        
+
     }
-}
+}   
+

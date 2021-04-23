@@ -1,5 +1,11 @@
 .form {
     display: flex;
+    
+
+    @include tablets {
+        flex-direction: column;
+        padding: 0 19%;
+    }
 }
 
 .form__column {
@@ -7,6 +13,10 @@
     margin-right: rem(16px);
 
     &:last-child {
+        margin-right: 0;
+    }
+
+    @include tablets {
         margin-right: 0;
     }
 }
@@ -32,18 +42,34 @@
     border: solid rem(3px) transparent;
     border-radius: rem(4px);
 
+    @include tablets {
+        height: 36px;
+    }
+
     &--textarea {
         height: rem(152px);
         resize: none;
+
+        @include tablets {
+            height: 82px;
+        }
+
     }
 
     &:focus {
         border-color: #DEE2BD;
         outline: none;
     }
+
+    
 }
 
 .form__controls {
     display: flex;
     flex-wrap: wrap;
+}
+
+.form__buttons {
+    display: flex;
+    justify-content: center;
 }

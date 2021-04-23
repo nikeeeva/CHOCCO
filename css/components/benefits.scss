@@ -14,6 +14,10 @@
         top: rem(50px);
         right: 0;
         transform: translate(50%);
+
+        @include tablets {
+            display: none;
+        }
     }
 
     &:first-child {
@@ -33,4 +37,8 @@
     font-weight: bold;
     margin-bottom: rem(18px);
     color: #292929;
+
+    @include tablets {
+        margin-bottom: 8px;
+    }
 }

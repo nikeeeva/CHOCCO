@@ -5,8 +5,16 @@
 
 .headline__title {
     margin-bottom: rem(19px);
+
+    @include tablets {
+        margin-bottom: 5px;
+    }
 }
 
 .headline__subtitle {
     padding: 0 31%;
+
+    @include tablets {
+        padding: 0 23%;
+    }
 }

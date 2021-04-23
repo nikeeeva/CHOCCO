@@ -28,10 +28,16 @@
 
 .menu__item {
     margin-right: rem(27px);
+    margin-top: 7px;
+    margin-bottom: 10px;
 
     &:last-child {
         margin-right: 0;
     }
+}
+
+.contacts {
+    margin-top: -20px;
 }
 
 

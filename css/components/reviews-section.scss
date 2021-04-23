@@ -2,6 +2,10 @@
     position: relative;
     background: url("../img/review-strawberry.svg") right 9% top 13% no-repeat;
 
+    @include tablets {
+        background-position: right -4% top 2%;
+    }
+
     &::before {
         content: url("../img/review-leaf-and-berries.svg");
         position: absolute;

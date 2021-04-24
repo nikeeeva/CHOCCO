@@ -1,0 +1,17 @@
+.footer {
+    left: 0;
+    right: 0;
+    padding: rem(23px) 0;
+    background: #fff;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacts__phone-text--footer {
+    color: #497870;
+}
+

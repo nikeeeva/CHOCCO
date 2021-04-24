@@ -302,11 +302,6 @@ img {
   color: #365A49;
   background: #fff;
 }
-@media screen and (max-width: 768px) {
-  .order__button--green {
-    margin-top: 0;
-  }
-}
 .order__button--transparent {
   background: transparent;
   color: #497870;
@@ -871,8 +866,8 @@ img {
   border-radius: 10px;
 }
 
-.map {
-  width: 1200px;
+.map__img {
+  margin-right: 0;
 }
 
 .footer {
@@ -888,10 +883,18 @@ img {
   align-items: center;
 }
 
+.contacts__phone-text--footer {
+  color: #497870;
+}
+
 .socials {
   display: flex;
+  margin-right: 28px;
 }
 
 .socials__list {
   margin-right: 14px;
+}
+.socials__list:last-child {
+  margin-right: 0;
 }

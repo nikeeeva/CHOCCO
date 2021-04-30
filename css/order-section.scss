@@ -1,0 +1,39 @@
+.order-section {
+    background: url("../img/order_background.png");
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: url("../img/order_blueberry.svg");
+        left: rem(51px);
+        bottom: rem(69px);
+
+        @include tablets {
+            display: none;
+        }
+    }
+
+    &::after {
+        content: url("../img/order_leaf.svg");
+        position: absolute;
+        right: rem(10px);
+        bottom: rem(58px);
+
+        @include tablets {
+            display: none;
+        }
+    }
+}
+
+.order-section__title {
+    margin-bottom: rem(61px);
+    color: $darkGreen;
+
+    @include tablets {
+        margin-bottom: 32px;
+    }
+
+    @include phones {
+        margin-bottom: 41px;
+    }
+}

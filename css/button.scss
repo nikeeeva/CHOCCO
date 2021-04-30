@@ -1,0 +1,60 @@
+.order__button {
+    font-size: rem(16px);
+    font-weight: 800;
+    padding: rem(21px) rem(41px);
+    text-transform: uppercase;
+    border-radius: rem(100px);
+    line-height: 94%;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+
+    &--white {
+        background: #fff;
+        color: $darkGreen;
+
+        &:hover {
+            color: #fff;
+            background: $darkGreen;
+
+        }
+
+        @include phones {
+            font-size: 19px;
+        }
+    }
+
+    &--green {
+        background: $darkGreen;
+        color: #fff;
+        margin-top: rem(44px);
+        margin-right: rem(-23px);
+
+        &:hover {
+            color: $darkGreen;
+            background: #fff;
+            
+
+        }
+
+        @include tablets {
+            // margin-top: 0;
+        }
+    }
+
+    &--transparent {
+        background: transparent;
+        color: #497870;
+        text-transform: none;
+        font-size: rem(18px);
+        font-weight: 400;
+        margin-top: rem(44px);
+        
+
+        &:hover {
+            color: $darkGreen;
+            
+
+        }
+    }
+}

@@ -9,9 +9,43 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include phones {
+        flex-direction: column;
+    }
+}
+
+.contacts__phone--green {
+
+    @include phones {
+        margin-right: 86px;
+        margin-bottom: -16px;
+    }
 }
 
 .contacts__phone-text--footer {
     color: #497870;
+}
+
+.contacts {
+    // margin-bottom: 18px;
+    margin-left: 86px;
+
+    @include phones {
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.contacts__address {
+    font-size: 21px;
+    color: #292929;
+    margin-bottom: -19px;
+
+    @include phones {
+        margin-right: 91px;
+    }
 }
 

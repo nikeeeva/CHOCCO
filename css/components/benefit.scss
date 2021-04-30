@@ -1,5 +1,10 @@
 .benefit {
     text-align: center;
+    
+    @include phones {
+        display: flex;
+        text-align: left;
+    }
 }
 
 .benefit__image-wrapper{
@@ -10,7 +15,11 @@
     background: #F2F5F4;
     border-radius: 50%;
     overflow: hidden; // при пересечении wrapper обрезается
-    margin-bottom: rem(20px);
+    // margin-bottom: rem(20px);
+
+    @include phones {
+        margin-right: 12px;
+    }
 }
 
 .benefit__img {
@@ -20,4 +29,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+
 }

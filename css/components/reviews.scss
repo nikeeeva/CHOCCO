@@ -56,6 +56,10 @@
 .reviews__content {
     flex: 1;
     margin-left: rem(40px);
+
+    @include phones {
+        margin-left: 0;
+    }
 }
 
 .reviews__title {
@@ -67,6 +71,10 @@
     @include tablets {
         margin-top: 32px;
         margin-right: 50px;
+    }
+
+    @include phones {
+        margin-right: 7px;
     }
 }
 

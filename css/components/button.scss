@@ -18,12 +18,16 @@
             background: $darkGreen;
 
         }
+
+        @include phones {
+            font-size: 19px;
+        }
     }
 
     &--green {
         background: $darkGreen;
         color: #fff;
-        margin-top: rem(63px);
+        margin-top: rem(44px);
         margin-right: rem(-23px);
 
         &:hover {
@@ -34,7 +38,7 @@
         }
 
         @include tablets {
-            margin-top: 0;
+            // margin-top: 0;
         }
     }
 
@@ -44,6 +48,7 @@
         text-transform: none;
         font-size: rem(18px);
         font-weight: 400;
+        margin-top: rem(44px);
         
 
         &:hover {

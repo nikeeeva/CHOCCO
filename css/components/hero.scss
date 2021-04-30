@@ -44,7 +44,11 @@
         text-align: center;
 
         &::before {
-            content: url("../img/comp.png");
+            content: "";
+            width: 323px;
+            height: 338px;
+            background: url("../img/comp.png") center center / contain no-repeat;
+            margin-bottom: 20px;
 
         }
     }
@@ -79,5 +83,9 @@
 
     @include tablets {
         padding: 0 26%;
+    }
+
+    @include phones {
+        padding: 0 16%;
     }
 }

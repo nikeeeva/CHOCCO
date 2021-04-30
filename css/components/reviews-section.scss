@@ -6,11 +6,19 @@
         background-position: right -4% top 2%;
     }
 
+
+
     &::before {
         content: url("../img/review-leaf-and-berries.svg");
         position: absolute;
         bottom: -21%;
         left: 0;
+
+        @include phones {
+            bottom: -22%;
+        }
+
+    
     }
     
 }
